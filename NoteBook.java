@@ -245,8 +245,8 @@ class Main
 		NoteBook notebook1 = instance.getNoteBook();
 
 		db.add(new Note(4, "Text1", "Desc content 1", new Date("11/05/2021")));
-		db.add(new Note(2, "Text2", "Abcd content 2 ", new Date("09/06/2021") ));
-		db.add(new Note(3, "Text3", "Qwerty content 3", new Date() ));
+		db.add(new Note(2, "Text2", "Qwerty content 2 ", new Date("09/06/2021") ));
+		db.add(new Note(3, "Text3", "Abcd content 3", new Date() ));
 
 
 		notebook1.sortByDate(db);
