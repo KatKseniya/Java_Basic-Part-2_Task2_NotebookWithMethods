@@ -116,10 +116,6 @@ class Note
 
 	private Date dateCreated;
 
-//	private Date dateCreated = new Date();
-//	SimpleDateFormat  formatter = new SimpleDateFormat("MM/dd/yyyy");
-//	String strDate = formatter.format(getDateCreated());
-
 
 	public Note(int id, String title, String content, Date dateCreated)
 	{
@@ -228,8 +224,6 @@ class NoteBookConsoleView
 		System.out.println("Введите количество строк, которые вы хотите распечатать");
 		int index = sc.nextInt();
 
-//		int a = note.size();
-
 		for (int i = 0; i < index; i++)
 		{
 
@@ -248,7 +242,6 @@ class Main
 
 		ArrayList <Note> db = new ArrayList<Note>();
 		NoteBookProvider instance = NoteBookProvider.getInstance();
-//		System.out.println("instance = " + instance);
 		NoteBook notebook1 = instance.getNoteBook();
 
 		db.add(new Note(4, "Text1", "Desc content 1", new Date("11/05/2021")));
@@ -260,8 +253,6 @@ class Main
 
 		NoteBookConsoleView.print(db);
 		NoteBookConsoleView.print(db, 2);
-
-//		NoteBookConsoleView.print(notebook1);
 
 		notebook1.sortByContent(db);
 		NoteBookConsoleView.print(db);
