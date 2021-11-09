@@ -90,6 +90,19 @@ public class NoteBook
 		return result;
 	}
 
+		List <Note> findByDate (List <Note> notes, Date date)
+	{
+		List<Note> result = new ArrayList<Note>();
+
+		for (Note note : notes)
+		{
+			if (note.getDateCreated().compareTo(date) == 0)
+			{
+				result.add(note);
+			}
+		}
+		return result;
+	}
 
 
 
