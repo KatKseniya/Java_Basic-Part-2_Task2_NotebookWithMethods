@@ -268,7 +268,7 @@ class Main
 	public static void main(String[] args)
 	{
 
-		ArrayList <Note> db = new ArrayList<Note>();
+		List <Note> db = new ArrayList<Note>();
 		NoteBookProvider instance = NoteBookProvider.getInstance();
 		NoteBook notebook1 = instance.getNoteBook();
 
