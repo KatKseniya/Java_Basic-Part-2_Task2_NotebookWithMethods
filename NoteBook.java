@@ -235,17 +235,17 @@ class NoteBookConsoleView
 		System.out.println(notes);
 	}
 
-	static void print(ArrayList<Note> note)
+	static void print(List<Note> note)
 	{
 		System.out.println(note);
 	}
 
-	static void print(ArrayList<Note> note, int index)
+	static void print(List<Note> note, int index)
 	{
 		System.out.println(note.get(index));
 	}
 
-	static void printSeveralItems(ArrayList<Note> note)
+	static void printSeveralItems(List<Note> note)
 	{
 		Scanner sc = new Scanner(System.in);
 
@@ -286,6 +286,11 @@ class Main
 		NoteBookConsoleView.print(db);
 
 		NoteBookConsoleView.printSeveralItems(db);
+		
+		
+		List <Note> db1 = notebook1.findByDate(db, new Date("09/06/2021"));
+
+		NoteBookConsoleView.print(db1);
 	}
 }
 
