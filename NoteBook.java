@@ -74,6 +74,21 @@ public class NoteBook
 		});
 		return notes;
 	}
+	
+	
+		List <Note> findByContent (List <Note> notes, String userContent)
+	{
+		List<Note> result = new ArrayList<Note>();
+
+		for (Note note : notes)
+		{
+			if (note.getContent().contains(userContent))
+			{
+				result.add(note);
+			}
+		}
+		return result;
+	}
 
 
 
